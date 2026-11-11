@@ -171,7 +171,7 @@ resource "aws_security_group" "allow_all" {
 
 resource "aws_iam_role" "cluster_role" {
 
-  name = "eks-cluster-role"
+  name = "sri-eks-cluster-role"
 
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
@@ -197,7 +197,7 @@ resource "aws_iam_role_policy_attachment" "cluster_policy" {
 
 resource "aws_iam_role" "worker_role" {
 
-  name = "eks-worker-role"
+  name = "sri-eks-worker-role"
 
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
