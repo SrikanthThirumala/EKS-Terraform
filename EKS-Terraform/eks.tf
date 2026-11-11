@@ -381,7 +381,7 @@ resource "aws_eks_addon" "pod_identity" {
 
 resource "aws_iam_role" "ebs_csi_role" {
 
-  name = "AmazonEKS_EBS_CSI_DriverRole"
+  name = "sri-AmazonEKS_EBS_CSI_DriverRole"
 
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
